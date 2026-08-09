@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "osn.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "osn.py"
+    }
+  ]
+}
